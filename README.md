@@ -43,15 +43,17 @@ Working:
 * Resets all variables when the game starts.
 * Snake starts at the centre of the screen.
   
-2)Draw()
-Working:
+2)Draw()  Working:  
+
 * Clears The screen.
 * Prints boundries.
 * Draws food,snakebody.
-3)input()
-  Working:
+  
+3)input()   Working:  
+
   * Checks if a key is pressed.
   * Supports arrow keys and WASD.
+    
 4)Logic()
 Working:
 * Moves the snake based on direction
@@ -72,6 +74,32 @@ Working:
 
 
 ## Data Structure Analysis
+1)Queue: A queue in c++ is FIFO(First in,First Out)data structure that allows elements to be added at the back and removed from the front.
+Here in this game queue is used to represent snake's body.  
+
+Syntax:  queue<pair<int,int>>snakebody  
+--->  QUEUE IS THE MOST PREFERABLE DATA STRUCTURE BECAUSE THE PUSH() AND POP() FUNCTIONS CAN DIRECTLY BE IMPLEMENTED TO ADD NEW HEAD POSITION OF SNAKE AND POP THE LAST ELEMENT OF THE BODY.  
+✔ This behavior matches the way a snake moves in real life.  
+
+✔ Arrays would require shifting elements when removing the tail, which is inefficient.  
+
+2)ENUM:  
+enum eDirecton { STOP = 0, LEFT, RIGHT, UP, DOWN };: Represents the possible movement directions of the snake.  
+3)Variables  
+int snakex, snakey: Stores the snake's head position.
+int fruitx, fruity: Stores the food's position.
+int score: Keeps track of the player's score.
+bool gameOver: Controls the main game loop.  
+## Major Highlights
+* The user can choose the difficulty level on basis of his skills in this game.
+* Game can be restarted infinitely many times based on user's choice.
+* Snake's skin is given a cool colour combination along with boundaries and fruit
+
+
+
+
+
+
 
 
 ## Future Improvements  
