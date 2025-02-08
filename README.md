@@ -93,7 +93,8 @@ bool gameOver: Controls the main game loop.
 ## Major Highlights
 * The user can choose the difficulty level on basis of his skills in this game.
 * Game can be restarted infinitely many times based on user's choice.
-* Snake's skin is given a cool colour combination along with boundaries and fruit
+* Snake's skin is given a cool colour combination along with boundaries and fruit.
+* This code is window's specific.
 
 
 
