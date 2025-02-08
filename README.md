@@ -34,4 +34,5 @@ Simple keyboard keys are taken into account to operate through the game.
 Rules are as simple as it gets ,eat as many fruit as you can without letting your serpent slide into the walls or itself.The more you eat the longer you get .
 Compete with your friends showing off your highest score.    
 
-## Data Base Analysis
+## Data Structure Analysis
+
