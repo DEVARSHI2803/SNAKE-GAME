@@ -96,7 +96,9 @@ bool gameOver: Controls the main game loop.
 * Snake's skin is given a cool colour combination along with boundaries and fruit.
 * This code is window's specific.
 
+## Snippet
 
+![Screenshot 2025-02-09 214315](https://github.com/user-attachments/assets/cd60909d-6af5-418a-9547-4f010d090be5)
 
 
 
@@ -109,8 +111,6 @@ bool gameOver: Controls the main game loop.
 * Adding custom gameplay option for user's favourite variety of other snake games.
 * Multiplayer can be introduced for fascinating experience.
   
-
-
 
 
 
