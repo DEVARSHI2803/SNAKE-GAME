@@ -116,7 +116,9 @@ void Setup()
     
     // Clear the queue and start with a single snake segment
     while (!snakeBody.empty()) snakeBody.pop();
-    snakeBody.push({ snakex, snakey });
+    snakeBody.push({snakex-2,snakey});
+    snakeBody.push({snakex-1,snakey});
+    snakeBody.push({snakex,snakey});
     HideCursor();
 }
 
