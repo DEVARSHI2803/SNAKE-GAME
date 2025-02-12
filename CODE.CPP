@@ -62,6 +62,28 @@ void StartMenu()
         }
     }
 }
+void Instructions()
+{
+    system("cls");
+    cout << "========================================\n";
+    cout << "          Instructions \n";
+    cout << "========================================\n";
+    cout<<  " Press 'W' or 'Up' arrow key to move up.\n";
+    cout<<  " Press 'A' or 'Left' arrow key to move left.\n";
+    cout<<  " Press 'S' or 'Down' arrow key to move down.\n";
+    cout<<  " Press 'D' or 'Right' arrow key to move right.\n";
+    cout << "  Press ENTER to Start\n";
+    cout << "========================================\n";
+    while (true)
+    {
+        if (_kbhit())  // If a key is pressed
+        {
+            char key = _getch();  // Get key press
+            if (key == 13) break; // Enter key starts the game
+            
+        }
+    }
+}
 void SelectDifficulty()
 {
     system("cls");
@@ -114,7 +136,7 @@ void Setup()
     score = 0;
     dir = STOP;
     
-    // Clear the queue and start with a single snake segment
+   
     while (!snakeBody.empty()) snakeBody.pop();
     snakeBody.push({snakex-2,snakey});
     snakeBody.push({snakex-1,snakey});
@@ -283,6 +305,8 @@ int main()
 {
     StartMenu();
     SelectDifficulty();
+    Instructions();
+    system("cls");
     while (true)  // Loop to restart the game if needed
     {
         Start();  // Play the game
