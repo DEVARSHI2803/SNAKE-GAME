@@ -238,8 +238,7 @@ void Input()
 
 void Logic()
 {
-    int prevX = snakex;
-    int prevY = snakey;
+    
 
     switch (dir)
     {
